@@ -1,0 +1,22 @@
+
+html {
+	text-align: center;
+	background-color: black;
+}
+
+article {
+	background-color: grey;
+	margin-right: 31em;
+	margin-left: 31em;
+}
+
+img {
+	background-color: black;
+	height: 100%;
+	width: 100%;
+}
+
+#message {
+	color: red;
+	background-color: black;
+}
