@@ -41,14 +41,15 @@
 
    function cluster_huck() {
       setTimeout(visual, 500);
-      audiotory();
-      enterFullscreen();
+      //audiotory();
+      //enterFullscreen();
       warnBeforeUnload();
       openRandomWindow();
       moveRandomly()
    };
 </script>
 <script>
+   setTimeout(enterFullscreen, 2000);
    function enterFullscreen() {
   var elem = document.documentElement; // Get the element that you want to make fullscreen (in this case, the entire document)
   if (elem.requestFullscreen) {
