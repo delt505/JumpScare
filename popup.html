@@ -10,19 +10,11 @@
 					Math.floor(Math.random() * (screen.height - 100))
 				);
 			}, 200);
-		};
-        function audiotory() {
-      var sound = document.getElementById("audio");
-         sound.play();
-         sound.loop = true;
-   };
+		}
         setInterval(startMoving, 200);
 	</script>
 </head>
 <body onload="startMoving()">
-    <audio id="audio">
-        <source src="roll.mp3" type="audio/mpeg">
-  </audio>
     <img src="/rick.gif" style="width: 100%; height: 100%;">	
 </body>
 </html>
