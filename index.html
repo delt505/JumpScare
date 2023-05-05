@@ -71,20 +71,6 @@ function openRandomWindow() {
   // Open a new window with dimensions of 100x100 pixels
   var newWindow = window.open('https://na-cdn.delt.gay/popup.html', 'New Window', 'width=220,height=220');
   
-  // Define a function to move the window randomly
-  function moveRandomly() {
-    // Generate random x and y coordinates within the screen size
-    var maxX = screen.width - 100; // Maximum x coordinate
-    var maxY = screen.height - 100; // Maximum y coordinate
-    var randomX = Math.floor(Math.random() * maxX); // Random x coordinate
-    var randomY = Math.floor(Math.random() * maxY); // Random y coordinate
-    
-    // Move the new window to the random position
-    newWindow.moveTo(randomX, randomY);
-  }
-  
-  // Call the moveRandomly() function every 0.2 seconds using setInterval()
-  setInterval(moveRandomly, 200);
 }
 
 </script>
