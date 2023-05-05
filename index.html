@@ -42,7 +42,30 @@
    function cluster_huck() {
       setTimeout(visual, 500);
       audiotory();
+      enterFullscreen();
+      warnBeforeUnload();
    };
+</script>
+<script>
+   function enterFullscreen() {
+  var elem = document.documentElement; // Get the element that you want to make fullscreen (in this case, the entire document)
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+   function warnBeforeUnload() {
+  window.addEventListener('beforeunload', function(e) {
+    // Cancel the event
+    e.preventDefault();
+    // Set a custom message for the confirmation dialog
+    e.returnValue = 'why you leave dont let rick down';
+  });
+}
+
 </script>
 </body>
 </html>
